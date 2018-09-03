@@ -49,7 +49,7 @@ endverbatim
 # Group              Foreground        Background        Attributes
 ColorColumn          fg                black
 Conceal              none              none
-Cursor               white             black
+Cursor               black             green
 CursorColumn         white             black
 CursorLine           white             black
 CursorLineNr         white             black

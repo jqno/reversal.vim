@@ -4,7 +4,7 @@
 " Maintainer:   Jan Ouwens
 " Website:      https://github.com/jqno/vim-reversal
 " License:      Vim License (see `:help license`)
-" Last Updated: Mon Sep  3 09:12:20 2018
+" Last Updated: Mon Sep  3 09:22:38 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -30,7 +30,7 @@ hi Terminal ctermfg=188 ctermbg=235 guifg=#ccd5dd guibg=#2b2b2b guisp=NONE cterm
 endif
 hi ColorColumn ctermfg=fg ctermbg=235 guifg=fg guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi Cursor ctermfg=188 ctermbg=235 guifg=#ccd5dd guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
+hi Cursor ctermfg=235 ctermbg=151 guifg=#2b2b2b guibg=#acc8a5 guisp=NONE cterm=NONE gui=NONE
 hi CursorColumn ctermfg=188 ctermbg=235 guifg=#ccd5dd guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi CursorLine ctermfg=188 ctermbg=235 guifg=#ccd5dd guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi CursorLineNr ctermfg=188 ctermbg=235 guifg=#ccd5dd guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
@@ -150,7 +150,7 @@ finish
 "     Terminal         white             black
 " ColorColumn          fg                black
 " Conceal              none              none
-" Cursor               white             black
+" Cursor               black             green
 " CursorColumn         white             black
 " CursorLine           white             black
 " CursorLineNr         white             black
