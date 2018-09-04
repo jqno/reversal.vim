@@ -4,7 +4,7 @@
 " Maintainer:   Jan Ouwens
 " Website:      https://github.com/jqno/vim-reversal
 " License:      Vim License (see `:help license`)
-" Last Updated: Tue Sep  4 09:03:57 2018
+" Last Updated: Tue Sep  4 12:57:03 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -98,9 +98,9 @@ hi! link Operator Statement
 hi! link PreCondit PreProc
 hi PreProc ctermfg=245 ctermbg=NONE guifg=#818a94 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi! link Repeat Statement
-hi! link Special SpecialKey
-hi! link SpecialChar Special
-hi! link SpecialComment Special
+hi Special ctermfg=188 ctermbg=NONE guifg=#ccd5dd guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi! link SpecialChar SpecialKey
+hi SpecialComment ctermfg=65 ctermbg=NONE guifg=#5c7b54 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Statement ctermfg=245 ctermbg=NONE guifg=#818a94 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi! link StorageClass Type
 hi! link String Constant
@@ -114,6 +114,12 @@ hi! link lCursor Cursor
 hi CursorIM ctermfg=NONE ctermbg=fg guifg=NONE guibg=fg guisp=NONE cterm=NONE gui=NONE
 hi ToolbarLine ctermfg=NONE ctermbg=235 guifg=NONE guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi ToolbarButton ctermfg=188 ctermbg=235 guifg=#ccd5dd guibg=#2b2b2b guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi! link htmlTag Statement
+hi! link htmlEndTag htmlTag
+hi! link vimOption Type
+hi! link xmlTag Statement
+hi! link xmlTagName xmlTag
+hi! link xmlEndTag xmlTag
 " Fill in default colors for the ones we don't use in this script
 let g:terminal_ansi_colors = [
     \ '#2b2b2b',
@@ -220,9 +226,9 @@ finish
 " PreCondit         -> PreProc
 " PreProc              darkgrey          none
 " Repeat            -> Statement
-" Special           -> SpecialKey
-" SpecialChar       -> Special
-" SpecialComment    -> Special
+" Special              white             none              bold
+" SpecialChar       -> SpecialKey
+" SpecialComment       darkgreen         none
 " Statement            darkgrey          none
 " StorageClass      -> Type
 " String            -> Constant
@@ -236,3 +242,9 @@ finish
 " CursorIM             none              fg
 " ToolbarLine          none              black
 " ToolbarButton        white             black             bold
+" htmlTag          ->  Statement
+" htmlEndTag       ->  htmlTag
+" vimOption        ->  Type
+" xmlTag           ->  Statement
+" xmlTagName       ->  xmlTag
+" xmlEndTag        ->  xmlTag

@@ -120,9 +120,9 @@ Operator          -> Statement
 PreCondit         -> PreProc
 PreProc              darkgrey          none
 Repeat            -> Statement
-Special           -> SpecialKey
-SpecialChar       -> Special
-SpecialComment    -> Special
+Special              white             none              bold
+SpecialChar       -> SpecialKey
+SpecialComment       darkgreen         none
 Statement            darkgrey          none
 StorageClass      -> Type
 String            -> Constant
@@ -143,6 +143,12 @@ ToolbarButton        white             black             bold
 
 # Additional highlight groups {{{
 # Add additional highlight groups here if you want
+htmlTag          ->  Statement
+htmlEndTag       ->  htmlTag
+vimOption        ->  Type
+xmlTag           ->  Statement
+xmlTagName       ->  xmlTag
+xmlEndTag        ->  xmlTag
 # }}}
 
 # Terminal colors {{{
