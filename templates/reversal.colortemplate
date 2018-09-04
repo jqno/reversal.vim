@@ -51,8 +51,8 @@ endverbatim
 # Group              Foreground        Background        Attributes
 ColorColumn          fg                black
 Conceal              none              none
-Cursor               black             green
-CursorColumn         none              darkgrey
+Cursor               black             darkblue
+CursorColumn         white             darkgrey          bold
 CursorLine       ->  CursorColumn
 CursorLineNr     ->  CursorColumn
 DiffAdd              green             black             reverse
@@ -72,11 +72,11 @@ MoreMsg              orange            black             reverse
 NonText              darkblue          black
 Pmenu                black             darkgrey
 PmenuSbar            none              black
-PmenuSel             darkblue          darkgrey
+PmenuSel             black             darkblue
 PmenuThumb           none              darkblue
 Question         ->  MoreMsg
 QuickFixLine     ->  Search
-Search               blue              black             reverse
+Search               green             black             reverse
 SignColumn           none              black
 SpecialKey           orange            black             bold
 SpellBad             white             black             s=red
@@ -90,9 +90,9 @@ StatusLineTermNC  -> StatusLineNC
 TabLine              darkgrey          black             reverse
 TabLineFill          white             black
 TabLineSel           darkblue          black             reverse
-Title                white             darkgrey          bold
+Title                darkblue          black
 VertSplit            darkgrey          darkgrey
-Visual               black             blue
+Visual               black             darkblue
 VisualNOS         -> Visual
 WarningMsg           blue              black             reverse
 WildMenu             darkblue          black

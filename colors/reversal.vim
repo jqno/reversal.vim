@@ -4,7 +4,7 @@
 " Maintainer:   Jan Ouwens
 " Website:      https://github.com/jqno/vim-reversal
 " License:      Vim License (see `:help license`)
-" Last Updated: Tue Sep  4 07:49:02 2018
+" Last Updated: Tue Sep  4 09:03:57 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -30,8 +30,8 @@ hi Terminal ctermfg=188 ctermbg=235 guifg=#ccd5dd guibg=#2b2b2b guisp=NONE cterm
 endif
 hi ColorColumn ctermfg=fg ctermbg=235 guifg=fg guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi Cursor ctermfg=235 ctermbg=151 guifg=#2b2b2b guibg=#acc8a5 guisp=NONE cterm=NONE gui=NONE
-hi CursorColumn ctermfg=NONE ctermbg=245 guifg=NONE guibg=#818a94 guisp=NONE cterm=NONE gui=NONE
+hi Cursor ctermfg=235 ctermbg=116 guifg=#2b2b2b guibg=#89cddc guisp=NONE cterm=NONE gui=NONE
+hi CursorColumn ctermfg=188 ctermbg=245 guifg=#ccd5dd guibg=#818a94 guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi! link CursorLine CursorColumn
 hi! link CursorLineNr CursorColumn
 hi DiffAdd ctermfg=151 ctermbg=235 guifg=#acc8a5 guibg=#2b2b2b guisp=NONE cterm=NONE,reverse gui=NONE,reverse
@@ -51,11 +51,11 @@ hi MoreMsg ctermfg=215 ctermbg=235 guifg=#ffa630 guibg=#2b2b2b guisp=NONE cterm=
 hi NonText ctermfg=116 ctermbg=235 guifg=#89cddc guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi Pmenu ctermfg=235 ctermbg=245 guifg=#2b2b2b guibg=#818a94 guisp=NONE cterm=NONE gui=NONE
 hi PmenuSbar ctermfg=NONE ctermbg=235 guifg=NONE guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
-hi PmenuSel ctermfg=116 ctermbg=245 guifg=#89cddc guibg=#818a94 guisp=NONE cterm=NONE gui=NONE
+hi PmenuSel ctermfg=235 ctermbg=116 guifg=#2b2b2b guibg=#89cddc guisp=NONE cterm=NONE gui=NONE
 hi PmenuThumb ctermfg=NONE ctermbg=116 guifg=NONE guibg=#89cddc guisp=NONE cterm=NONE gui=NONE
 hi! link Question MoreMsg
 hi! link QuickFixLine Search
-hi Search ctermfg=195 ctermbg=235 guifg=#c9e8ef guibg=#2b2b2b guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi Search ctermfg=151 ctermbg=235 guifg=#acc8a5 guibg=#2b2b2b guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi SignColumn ctermfg=NONE ctermbg=235 guifg=NONE guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi SpecialKey ctermfg=215 ctermbg=235 guifg=#ffa630 guibg=#2b2b2b guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi SpellBad ctermfg=188 ctermbg=235 guifg=#ccd5dd guibg=#2b2b2b guisp=#ae2e2b cterm=NONE gui=NONE
@@ -69,9 +69,9 @@ hi! link StatusLineTermNC StatusLineNC
 hi TabLine ctermfg=245 ctermbg=235 guifg=#818a94 guibg=#2b2b2b guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi TabLineFill ctermfg=188 ctermbg=235 guifg=#ccd5dd guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi TabLineSel ctermfg=116 ctermbg=235 guifg=#89cddc guibg=#2b2b2b guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi Title ctermfg=188 ctermbg=245 guifg=#ccd5dd guibg=#818a94 guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi Title ctermfg=116 ctermbg=235 guifg=#89cddc guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi VertSplit ctermfg=245 ctermbg=245 guifg=#818a94 guibg=#818a94 guisp=NONE cterm=NONE gui=NONE
-hi Visual ctermfg=235 ctermbg=195 guifg=#2b2b2b guibg=#c9e8ef guisp=NONE cterm=NONE gui=NONE
+hi Visual ctermfg=235 ctermbg=116 guifg=#2b2b2b guibg=#89cddc guisp=NONE cterm=NONE gui=NONE
 hi! link VisualNOS Visual
 hi WarningMsg ctermfg=195 ctermbg=235 guifg=#c9e8ef guibg=#2b2b2b guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi WildMenu ctermfg=116 ctermbg=235 guifg=#89cddc guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
@@ -152,8 +152,8 @@ finish
 "     Terminal         white             black
 " ColorColumn          fg                black
 " Conceal              none              none
-" Cursor               black             green
-" CursorColumn         none              darkgrey
+" Cursor               black             darkblue
+" CursorColumn         white             darkgrey          bold
 " CursorLine       ->  CursorColumn
 " CursorLineNr     ->  CursorColumn
 " DiffAdd              green             black             reverse
@@ -173,11 +173,11 @@ finish
 " NonText              darkblue          black
 " Pmenu                black             darkgrey
 " PmenuSbar            none              black
-" PmenuSel             darkblue          darkgrey
+" PmenuSel             black             darkblue
 " PmenuThumb           none              darkblue
 " Question         ->  MoreMsg
 " QuickFixLine     ->  Search
-" Search               blue              black             reverse
+" Search               green             black             reverse
 " SignColumn           none              black
 " SpecialKey           orange            black             bold
 " SpellBad             white             black             s=red
@@ -191,9 +191,9 @@ finish
 " TabLine              darkgrey          black             reverse
 " TabLineFill          white             black
 " TabLineSel           darkblue          black             reverse
-" Title                white             darkgrey          bold
+" Title                darkblue          black
 " VertSplit            darkgrey          darkgrey
-" Visual               black             blue
+" Visual               black             darkblue
 " VisualNOS         -> Visual
 " WarningMsg           blue              black             reverse
 " WildMenu             darkblue          black
