@@ -26,6 +26,8 @@ Color: orange               #ffa630                ~        DarkYellow
 Color: darkgreen            #5c7b54                ~        DarkGreen
 Color: green                #acc8a5                ~        LightGreen
 Color: red                  #ae2e2b                ~        LightRed
+Color: blue                 #c9e8ef                ~        LightBlue
+Color: darkblue             #89cddc                ~        DarkBlue
 # }}}
 
 # Default highlight groups {{{
@@ -50,50 +52,50 @@ endverbatim
 ColorColumn          fg                black
 Conceal              none              none
 Cursor               black             green
-CursorColumn         white             black
-CursorLine           white             black
-CursorLineNr         white             black
-DiffAdd              white             black             reverse
-DiffChange           white             black             reverse
-DiffDelete           white             black             reverse
-DiffText             white             black             bold,reverse
-Directory            white             black
-EndOfBuffer          white             black
-ErrorMsg             white             black             reverse
-FoldColumn           white             black
-Folded               white             black             italic
-IncSearch            white             black             t=reverse g=standout
-LineNr               white             black
-MatchParen           white             black
-ModeMsg              white             black
-MoreMsg              white             black
-NonText              white             black
-Pmenu                white             black
-PmenuSbar            white             black
-PmenuSel             white             black
-PmenuThumb           white             black
-Question             white             black
+CursorColumn         none              darkgrey
+CursorLine       ->  CursorColumn
+CursorLineNr     ->  CursorColumn
+DiffAdd              green             black             reverse
+DiffChange           orange            black             reverse
+DiffDelete           red               black             reverse
+DiffText             white             black
+Directory            green             black
+EndOfBuffer      ->  NonText
+ErrorMsg             red               white             reverse
+FoldColumn           lightgrey         black
+Folded               lightgrey         black             italic
+IncSearch        ->  Search
+LineNr               darkgrey          black
+MatchParen           darkblue          black
+ModeMsg              orange            black
+MoreMsg              orange            black             reverse
+NonText              darkblue          black
+Pmenu                black             darkgrey
+PmenuSbar            none              black
+PmenuSel             darkblue          darkgrey
+PmenuThumb           none              darkblue
+Question         ->  MoreMsg
 QuickFixLine     ->  Search
-Search               white             black
-SignColumn           white             black
-SpecialKey           white             black
+Search               blue              black             reverse
+SignColumn           none              black
+SpecialKey           orange            black             bold
 SpellBad             white             black             s=red
 SpellCap             white             black             s=red
 SpellLocal           white             black             s=red
 SpellRare            white             black             s=red reverse
-StatusLine           white             black
-StatusLineNC         white             black
+StatusLine           darkblue          black             reverse
+StatusLineNC         darkgrey          black             reverse
 StatusLineTerm    -> StatusLine
 StatusLineTermNC  -> StatusLineNC
-TabLine              white             black
+TabLine              darkgrey          black             reverse
 TabLineFill          white             black
-TabLineSel           white             black
-Title                white             black
-VertSplit            black             black
-Visual               white             black
-VisualNOS            white             black
-WarningMsg           white             black
-WildMenu             white             black
+TabLineSel           darkblue          black             reverse
+Title                white             darkgrey          bold
+VertSplit            darkgrey          darkgrey
+Visual               black             blue
+VisualNOS         -> Visual
+WarningMsg           blue              black             reverse
+WildMenu             darkblue          black
 # Other conventional group names (see `:help group-name`)
 Boolean           -> Constant
 Character         -> Constant
@@ -102,8 +104,8 @@ Conditional       -> Statement
 Constant             orange            none
 Define            -> PreProc
 Debug             -> Special
-Delimiter         -> Special
-Error                white             red               reverse
+Delimiter            darkgrey          none
+Error                red               white             reverse
 Exception         -> Statement
 Float             -> Constant
 Function          -> Identifier
@@ -118,7 +120,7 @@ Operator          -> Statement
 PreCondit         -> PreProc
 PreProc              darkgrey          none
 Repeat            -> Statement
-Special              white             none
+Special           -> SpecialKey
 SpecialChar       -> Special
 SpecialComment    -> Special
 Statement            darkgrey          none
@@ -149,9 +151,9 @@ verbatim
 let g:terminal_ansi_colors = [
     \ '@guiblack',
     \ '@guired',
-    \ '@guigreen',
+    \ '@guidarkgreen',
     \ '@guiorange',
-    \ '#0000ff',
+    \ '@guidarkblue',
     \ '#ff00ff',
     \ '#00ffff',
     \ '@guilightgrey',
@@ -159,7 +161,7 @@ let g:terminal_ansi_colors = [
     \ '#ff6400',
     \ '@guigreen',
     \ '#ffff64',
-    \ '#0064ff',
+    \ '@guiblue',
     \ '#ff64ff',
     \ '#64ffff',
     \ '@guiwhite'
