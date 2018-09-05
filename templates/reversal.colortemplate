@@ -18,16 +18,16 @@ Background: dark
 
 # Color palette {{{
 # Color name                GUI                  Base256    Base16 (optional)
-Color: black                #2b2b2b                ~        Black
-Color: white                #ccd5dd                ~        White
-Color: lightgrey            #a9b7c6                ~        LightGrey
-Color: darkgrey             #818a94                ~        DarkGrey
-Color: orange               #ffa630                ~        DarkYellow
-Color: darkgreen            #5c7b54                ~        DarkGreen
-Color: green                #acc8a5                ~        LightGreen
-Color: red                  #ae2e2b                ~        LightRed
-Color: blue                 #c9e8ef                ~        LightBlue
-Color: darkblue             #89cddc                ~        DarkBlue
+Color: black                #2b2b2b                236      Black
+Color: white                #ccd5dd                188      White
+Color: lightgrey            #a9b7c6                146      LightGrey
+Color: darkgrey             #818a94                245      DarkGrey
+Color: orange               #ffa630                215      DarkYellow
+Color: darkgreen            #5c7b54                 65      DarkGreen
+Color: green                #acc8a5                151      LightGreen
+Color: red                  #ae2e2b                124      LightRed
+Color: blue                 #c9e8ef                117      LightBlue
+Color: darkblue             #89cddc                111      DarkBlue
 # }}}
 
 # Default highlight groups {{{
