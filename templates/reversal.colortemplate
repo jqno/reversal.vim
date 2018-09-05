@@ -64,7 +64,7 @@ EndOfBuffer      ->  NonText
 ErrorMsg             red               white             reverse
 FoldColumn           lightgrey         black
 Folded               lightgrey         black             italic
-IncSearch        ->  Search
+IncSearch            white             red               reverse
 LineNr               darkgrey          black
 MatchParen           darkblue          black
 ModeMsg              orange            black
