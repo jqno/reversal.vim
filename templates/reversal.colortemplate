@@ -143,6 +143,7 @@ ToolbarButton        white             black             bold
 
 # Additional highlight groups {{{
 # Add additional highlight groups here if you want
+Underlined       ->  PreProc
 htmlTag          ->  Statement
 htmlEndTag       ->  htmlTag
 vimOption        ->  Type

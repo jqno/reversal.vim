@@ -4,7 +4,7 @@
 " Maintainer:   Jan Ouwens
 " Website:      https://github.com/jqno/vim-reversal
 " License:      Vim License (see `:help license`)
-" Last Updated: Thu Sep  6 07:56:23 2018
+" Last Updated: Thu Sep  6 07:57:11 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -114,6 +114,7 @@ hi! link lCursor Cursor
 hi CursorIM ctermfg=NONE ctermbg=fg guifg=NONE guibg=fg guisp=NONE cterm=NONE gui=NONE
 hi ToolbarLine ctermfg=NONE ctermbg=236 guifg=NONE guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi ToolbarButton ctermfg=188 ctermbg=236 guifg=#ccd5dd guibg=#2b2b2b guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi! link Underlined PreProc
 hi! link htmlTag Statement
 hi! link htmlEndTag htmlTag
 hi! link vimOption Type
@@ -242,6 +243,7 @@ finish
 " CursorIM             none              fg
 " ToolbarLine          none              black
 " ToolbarButton        white             black             bold
+" Underlined       ->  PreProc
 " htmlTag          ->  Statement
 " htmlEndTag       ->  htmlTag
 " vimOption        ->  Type
