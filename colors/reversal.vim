@@ -4,7 +4,7 @@
 " Maintainer:   Jan Ouwens
 " Website:      https://github.com/jqno/vim-reversal
 " License:      Vim License (see `:help license`)
-" Last Updated: Thu Sep  6 07:57:11 2018
+" Last Updated: Thu Sep  6 17:22:26 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -42,7 +42,7 @@ hi Directory ctermfg=151 ctermbg=236 guifg=#acc8a5 guibg=#2b2b2b guisp=NONE cter
 hi! link EndOfBuffer NonText
 hi ErrorMsg ctermfg=124 ctermbg=188 guifg=#ae2e2b guibg=#ccd5dd guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi FoldColumn ctermfg=146 ctermbg=236 guifg=#a9b7c6 guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
-hi Folded ctermfg=146 ctermbg=236 guifg=#a9b7c6 guibg=#2b2b2b guisp=NONE cterm=NONE,italic gui=NONE,italic
+hi Folded ctermfg=146 ctermbg=236 guifg=#a9b7c6 guibg=#2b2b2b guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi IncSearch ctermfg=188 ctermbg=124 guifg=#ccd5dd guibg=#ae2e2b guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi LineNr ctermfg=245 ctermbg=236 guifg=#818a94 guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi MatchParen ctermfg=111 ctermbg=236 guifg=#89cddc guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
@@ -171,7 +171,7 @@ finish
 " EndOfBuffer      ->  NonText
 " ErrorMsg             red               white             reverse
 " FoldColumn           lightgrey         black
-" Folded               lightgrey         black             italic
+" Folded               lightgrey         black             reverse
 " IncSearch            white             red               reverse
 " LineNr               darkgrey          black
 " MatchParen           darkblue          black

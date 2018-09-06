@@ -63,7 +63,7 @@ Directory            green             black
 EndOfBuffer      ->  NonText
 ErrorMsg             red               white             reverse
 FoldColumn           lightgrey         black
-Folded               lightgrey         black             italic
+Folded               lightgrey         black             reverse
 IncSearch            white             red               reverse
 LineNr               darkgrey          black
 MatchParen           darkblue          black
