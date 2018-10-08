@@ -76,7 +76,7 @@ PmenuSel             black             darkblue
 PmenuThumb           none              darkblue
 Question         ->  MoreMsg
 QuickFixLine     ->  Search
-Search               green             black             reverse
+Search               orange            black             reverse
 SignColumn           none              black
 SpecialKey           orange            black             bold
 SpellBad             white             black             s=red

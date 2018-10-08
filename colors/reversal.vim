@@ -4,7 +4,7 @@
 " Maintainer:   Jan Ouwens
 " Website:      https://github.com/jqno/vim-reversal
 " License:      Vim License (see `:help license`)
-" Last Updated: Thu Sep  6 17:22:26 2018
+" Last Updated: Mon  8 Oct 13:23:44 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -55,7 +55,7 @@ hi PmenuSel ctermfg=236 ctermbg=111 guifg=#2b2b2b guibg=#89cddc guisp=NONE cterm
 hi PmenuThumb ctermfg=NONE ctermbg=111 guifg=NONE guibg=#89cddc guisp=NONE cterm=NONE gui=NONE
 hi! link Question MoreMsg
 hi! link QuickFixLine Search
-hi Search ctermfg=151 ctermbg=236 guifg=#acc8a5 guibg=#2b2b2b guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi Search ctermfg=215 ctermbg=236 guifg=#ffa630 guibg=#2b2b2b guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi SignColumn ctermfg=NONE ctermbg=236 guifg=NONE guibg=#2b2b2b guisp=NONE cterm=NONE gui=NONE
 hi SpecialKey ctermfg=215 ctermbg=236 guifg=#ffa630 guibg=#2b2b2b guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi SpellBad ctermfg=188 ctermbg=236 guifg=#ccd5dd guibg=#2b2b2b guisp=#ae2e2b cterm=NONE gui=NONE
@@ -184,7 +184,7 @@ finish
 " PmenuThumb           none              darkblue
 " Question         ->  MoreMsg
 " QuickFixLine     ->  Search
-" Search               green             black             reverse
+" Search               orange            black             reverse
 " SignColumn           none              black
 " SpecialKey           orange            black             bold
 " SpellBad             white             black             s=red
