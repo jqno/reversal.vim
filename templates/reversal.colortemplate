@@ -14,6 +14,8 @@ Terminal Colors: 256
 Option Prefix: dark
 # }}}
 
+# Usage: github.com/lifepillar/vim-colortemplate
+
 Background: dark
 
 # Color palette {{{
