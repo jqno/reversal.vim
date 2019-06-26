@@ -9,8 +9,7 @@ Maintainer:  Jan Ouwens
 # Optional
 Website: https://github.com/jqno/vim-reversal
 Description: A 'reversed' colorscheme for vim
-License:
-Terminal Colors: 256
+License: MIT
 Option Prefix: dark
 # }}}
 
@@ -30,6 +29,7 @@ Color: green                #acc8a5                151      LightGreen
 Color: red                  #ae2e2b                124      LightRed
 Color: blue                 #c9e8ef                117      LightBlue
 Color: darkblue             #89cddc                111      DarkBlue
+Color: unused 		    #000000                000      Black
 # }}}
 
 # Default highlight groups {{{
@@ -155,25 +155,20 @@ xmlEndTag        ->  xmlTag
 # }}}
 
 # Terminal colors {{{
-verbatim
-" Fill in default colors for the ones we don't use in this script
-let g:terminal_ansi_colors = [
-    \ '@guiblack',
-    \ '@guired',
-    \ '@guidarkgreen',
-    \ '@guiorange',
-    \ '@guidarkblue',
-    \ '#ff00ff',
-    \ '#00ffff',
-    \ '@guilightgrey',
-    \ '@guidarkgrey',
-    \ '#ff6400',
-    \ '@guigreen',
-    \ '#ffff64',
-    \ '@guiblue',
-    \ '#ff64ff',
-    \ '#64ffff',
-    \ '@guiwhite'
-\ ]
-endverbatim
+Term Colors: black
+Term Colors: red
+Term Colors: darkgreen
+Term Colors: orange
+Term Colors: darkblue
+Term Colors: unused
+Term Colors: unused
+Term Colors: lightgrey
+Term Colors: darkgrey
+Term Colors: unused
+Term Colors: green
+Term Colors: unused
+Term Colors: blue
+Term Colors: unused
+Term Colors: unused
+Term Colors: white
 # }}}
