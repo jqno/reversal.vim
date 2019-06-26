@@ -85,8 +85,8 @@ SpellBad             white             black             s=red
 SpellCap             white             black             s=red
 SpellLocal           white             black             s=red
 SpellRare            white             black             s=red reverse
-StatusLine           darkblue          black             reverse
-StatusLineNC         darkgrey          black             reverse
+StatusLine           black             darkblue
+StatusLineNC         black             darkgrey
 StatusLineTerm    -> StatusLine
 StatusLineTermNC  -> StatusLineNC
 TabLine              darkgrey          black             reverse
