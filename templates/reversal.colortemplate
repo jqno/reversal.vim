@@ -77,8 +77,8 @@ PmenuSbar            none              black
 PmenuSel             black             darkblue
 PmenuThumb           none              darkblue
 Question         ->  MoreMsg
-QuickFixLine     ->  Search
-Search               orange            black             reverse
+QuickFixLine     ->  Visual
+Search               black             darkblue
 SignColumn           none              black
 SpecialKey           orange            black             bold
 SpellBad             white             black             s=red
@@ -94,7 +94,7 @@ TabLineFill          white             black
 TabLineSel           darkblue          black             reverse
 Title                darkblue          black
 VertSplit            darkgrey          darkgrey
-Visual               black             darkblue
+Visual               black             orange
 VisualNOS         -> Visual
 WarningMsg           blue              black             reverse
 WildMenu             darkblue          black
