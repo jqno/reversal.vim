@@ -62,7 +62,7 @@ DiffChange           orange            black             reverse
 DiffDelete           red               black             reverse
 DiffText             white             black
 Directory            green             black
-EndOfBuffer      ->  NonText
+EndOfBuffer          darkblue          none
 ErrorMsg             red               white             reverse
 FoldColumn           lightgrey         black
 Folded               lightgrey         black             reverse
