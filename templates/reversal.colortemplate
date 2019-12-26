@@ -63,6 +63,7 @@ DiffDelete           red               black             reverse
 DiffText             white             black
 Directory            green             black
 EndOfBuffer          darkblue          none
+Error	             white 	       red               s=red
 ErrorMsg             red               white             reverse
 FoldColumn           lightgrey         black
 Folded               lightgrey         black             reverse
@@ -81,8 +82,8 @@ QuickFixLine     ->  Visual
 Search               black             darkblue
 SignColumn           none              black
 SpecialKey           orange            black             bold
-SpellBad             white             black             s=red
-SpellCap             white             black             s=red
+SpellBad             black             orange            s=red
+SpellCap             white             black             bold s=red
 SpellLocal           white             black             s=red
 SpellRare            white             black             s=red reverse
 StatusLine           black             darkblue
