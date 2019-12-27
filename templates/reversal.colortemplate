@@ -63,7 +63,7 @@ DiffDelete           red               black             reverse
 DiffText             white             black
 Directory            green             black
 EndOfBuffer          darkblue          none
-Error	             white 	       red               s=red
+Error                red               none              bold s=red
 ErrorMsg             red               white             reverse
 FoldColumn           lightgrey         black
 Folded               lightgrey         black             reverse
@@ -82,8 +82,8 @@ QuickFixLine     ->  Visual
 Search               black             darkblue
 SignColumn           none              black
 SpecialKey           orange            black             bold
-SpellBad             black             orange            s=red
-SpellCap             white             black             bold s=red
+SpellBad             orange            none              bold s=red
+SpellCap             orange            none              bold s=red
 SpellLocal           white             black             s=red
 SpellRare            white             black             s=red reverse
 StatusLine           black             darkblue
@@ -108,7 +108,6 @@ Constant             orange            none
 Define            -> PreProc
 Debug             -> Special
 Delimiter            darkgrey          none
-Error                red               white             reverse
 Exception         -> Statement
 Float             -> Constant
 Function          -> Identifier
