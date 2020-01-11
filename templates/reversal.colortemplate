@@ -20,6 +20,7 @@ Background: dark
 # Color palette {{{
 # Color name                GUI                  Base256    Base16 (optional)
 Color: black                #2b2b2b                236      Black
+Color: slightlylessblack    #444444                238
 Color: white                #ccd5dd                188      White
 Color: lightgrey            #a9b7c6                146      LightGrey
 Color: darkgrey             #818a94                245      DarkGrey
@@ -29,7 +30,7 @@ Color: green                #acc8a5                151      LightGreen
 Color: red                  #ae2e2b                124      LightRed
 Color: blue                 #c9e8ef                117      LightBlue
 Color: darkblue             #89cddc                111      DarkBlue
-Color: unused 		    #000000                000      Black
+Color: unused               #000000                000      Black
 # }}}
 
 # Default highlight groups {{{
@@ -63,7 +64,7 @@ DiffDelete           red               black             reverse
 DiffText             white             black
 Directory            green             black
 EndOfBuffer          darkblue          none
-Error                red               none              bold s=red
+Error                red               none              s=red
 ErrorMsg             red               white             reverse
 FoldColumn           lightgrey         black
 Folded               lightgrey         black             reverse
@@ -82,8 +83,8 @@ QuickFixLine     ->  Visual
 Search               black             darkblue
 SignColumn           none              black
 SpecialKey           orange            black             bold
-SpellBad             orange            none              bold s=red
-SpellCap             orange            none              bold s=red
+SpellBad             none              slightlylessblack
+SpellCap             none              slightlylessblack
 SpellLocal           white             black             s=red
 SpellRare            white             black             s=red reverse
 StatusLine           black             darkblue
