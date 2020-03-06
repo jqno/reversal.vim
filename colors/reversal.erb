@@ -40,11 +40,10 @@
     # Make sure the name of your colorscheme is unique and attractive.
     # The description should fit in a single line with no linefeed.
     information = {
-        author:      "foo",
-        email:       "foo@foo.foo",
-        name:        "rnb",
-        description: "Lorem ipsum dolor sit amet.",
-        webpage:     "http://www.example.com"
+        author:      "Jan Ouwens",
+        name:        "reversal",
+        description: "A 'reversed' colorscheme for vim",
+        webpage:     "https://github.com/jqno/reversal.vim"
     }
 
     # Step 3: colors
@@ -61,22 +60,18 @@
     #
     # If your colors are defined correctly, the resulting colorscheme is guaranteed
     # to work in GVim (Windows/Linux), MacVim (MacOS), and any properly set up terminal emulator.
-    black       = ["#000000", 0, "black"]
-    darkred     = ["#800000", 1, "darkred"]
-    darkgreen   = ["#008000", 2, "darkgreen"]
-    darkyellow  = ["#808000", 3, "darkyellow"]
-    darkblue    = ["#000080", 4, "darkblue"]
-    darkmagenta = ["#800080", 5, "darkmagenta"]
-    darkcyan    = ["#008080", 6, "darkcyan"]
-    gray        = ["#c0c0c0", 7, "gray"]
-    darkgray    = ["#808080", 8, "darkgray"]
-    red         = ["#ff0000", 9, "red"]
-    green       = ["#00ff00", 10, "green"]
-    yellow      = ["#ffff00", 11, "yellow"]
-    blue        = ["#0000ff", 12, "blue"]
-    magenta     = ["#ff00ff", 13, "magenta"]
-    cyan        = ["#00ffff", 14, "cyan"]
-    white       = ["#ffffff", 15, "white"]
+    black       = [ "#2b2b2b", 236, "black" ]
+    slightlylessblack = [ "#444444", 238, "black" ]
+    white       = [ "#ccd5dd", 188, "white" ]
+    lightgrey   = [ "#a9b7c6", 146, "grey" ]
+    darkgrey    = [ "#818a94", 245, "darkgrey" ]
+    orange      = [ "#ffa630", 215, "darkyellow" ]
+    darkgreen   = [ "#5c7b54", 65, "darkgreen" ]
+    green       = [ "#acc8a5", 151, "green" ]
+    red         = [ "#ae2e2b", 124, "red" ]
+    blue        = [ "#c9e8ef", 117, "blue" ]
+    darkblue    = [ "#89cddc", 111, "darkblue" ]
+    unused      = [ "#000000", 0, "black" ]
 
     # Step 4: highlights
     #
@@ -115,75 +110,102 @@
     # :help highlight-default, the others are taken from :help group-name. Both help sections
     # are good reads, by the way.
     highlights = [
-        [ "Normal", white, darkgray, "NONE" ],
-        [ "NonText", white, darkgray, "NONE" ],
-        [ "EndOfBuffer","NonText" ],
-        [ "Comment", white, darkgray, "NONE" ],
-        [ "Constant", white, darkgray, "NONE" ],
-        [ "Error", white, darkgray, "NONE" ],
-        [ "Identifier", white, darkgray, "NONE" ],
-        [ "Ignore", white, darkgray, "NONE" ],
-        [ "PreProc", white, darkgray, "NONE" ],
-        [ "Special", white, darkgray, "NONE" ],
-        [ "Statement", white, darkgray, "NONE" ],
-        [ "String", white, darkgray, "NONE" ],
+        [ "Normal", "NONE", white, "NONE" ],
+        [ "Boolean", "Constant" ],
+        [ "Character", "Constant" ],
+        [ "ColorColumn", black, "fg", "NONE" ],
+        [ "Comment", "NONE", green, "NONE" ],
+        [ "Conceal", "NONE", "NONE", "NONE" ],
+        [ "Conditional", "Statement" ],
+        [ "Constant", "NONE", orange, "NONE" ],
+        [ "Cursor", darkblue, black, "NONE" ],
+        [ "CursorColumn", darkgrey, white, "bold" ],
+        [ "CursorIM", "fg", "NONE", "NONE" ],
+        [ "CursorLine", "CursorColumn" ],
+        [ "CursorLineNr", "CursorColumn" ],
+        [ "Debug", "Special" ],
+        [ "Define", "PreProc" ],
+        [ "Delimiter", "NONE", darkgrey, "NONE" ],
+        [ "DiffAdd", green, black, "NONE" ],
+        [ "DiffChange", orange, black, "NONE" ],
+        [ "DiffDelete", red, black, "NONE" ],
+        [ "DiffText", black, white, "NONE" ],
+        [ "Directory", black, green, "NONE" ],
+        [ "EndOfBuffer", "NONE", darkblue, "NONE" ],
+        [ "Error", "NONE", red, "undercurl", red ],
+        [ "ErrorMsg", red, white, "NONE" ],
+        [ "Exception", "Statement" ],
+        [ "Float", "Constant" ],
+        [ "FoldColumn", black, lightgrey, "NONE" ],
+        [ "Folded", lightgrey, black, "NONE" ],
+        [ "Function", "Identifier" ],
+        [ "Identifier", "NONE", white, "NONE" ],
+        [ "Ignore", "NONE", lightgrey, "NONE" ],
+        [ "IncSearch", red, white, "NONE" ],
+        [ "Include", "PreProc" ],
+        [ "Keyword", "Statement" ],
+        [ "Label", "Statement" ],
+        [ "LineNr", black, darkgrey, "NONE" ],
+        [ "Macro", "PreProc" ],
+        [ "MatchParen", black, darkblue, "NONE" ],
+        [ "ModeMsg", black, orange, "NONE" ],
+        [ "MoreMsg", orange, black, "NONE" ],
+        [ "NonText", black, darkblue, "NONE" ],
         [ "Number", "Constant" ],
-        [ "Todo", white, darkgray, "NONE" ],
-        [ "Type", white, darkgray, "NONE" ],
-        [ "Underlined", white, darkgray, "NONE" ],
-        [ "StatusLine", white, darkgray, "NONE" ],
-        [ "StatusLineNC", white, darkgray, "NONE" ],
+        [ "Operator", "Statement" ],
+        [ "Pmenu", darkgrey, black, "NONE" ],
+        [ "PmenuSbar", black, "NONE", "NONE" ],
+        [ "PmenuSel", darkblue, black, "NONE" ],
+        [ "PmenuThumb", darkblue, "NONE", "NONE" ],
+        [ "PreCondit", "PreProc" ],
+        [ "PreProc", "NONE", darkgrey, "NONE" ],
+        [ "Question", "MoreMsg" ],
+        [ "QuickFixLine", "Visual" ],
+        [ "Repeat", "Statement" ],
+        [ "Search", darkblue, black, "NONE" ],
+        [ "SignColumn", black, "NONE", "NONE" ],
+        [ "Special", "NONE", white, "bold" ],
+        [ "SpecialChar", "SpecialKey" ],
+        [ "SpecialComment", "NONE", darkgreen, "NONE" ],
+        [ "SpecialKey", black, orange, "bold" ],
+        [ "SpellBad", slightlylessblack, "NONE", "NONE" ],
+        [ "SpellCap", slightlylessblack, "NONE", "NONE" ],
+        [ "SpellLocal", black, white, "undercurl", red ],
+        [ "SpellRare", white, black, "undercurl", red ],
+        [ "Statement", "NONE", darkgrey, "NONE" ],
+        [ "StatusLine", darkblue, black, "NONE" ],
+        [ "StatusLineNC", darkgrey, black, "NONE" ],
         [ "StatusLineTerm", "StatusLine" ],
         [ "StatusLineTermNC", "StatusLineNC" ],
-        [ "VertSplit", white, darkgray, "NONE" ],
-        [ "TabLine", white, darkgray, "NONE" ],
-        [ "TabLineFill", white, darkgray, "NONE" ],
-        [ "TabLineSel", white, darkgray, "NONE" ],
-        [ "Title", white, darkgray, "NONE" ],
-        [ "CursorLine", white, darkgray, "NONE" ],
-        [ "LineNr", white, darkgray, "NONE" ],
-        [ "CursorLineNr", white, darkgray, "NONE" ],
-        [ "helpLeadBlank", white, darkgray, "NONE" ],
-        [ "helpNormal", white, darkgray, "NONE" ],
-        [ "Visual", white, darkgray, "NONE" ],
-        [ "VisualNOS", white, darkgray, "NONE" ],
-        [ "Pmenu", white, darkgray, "NONE" ],
-        [ "PmenuSbar", white, darkgray, "NONE" ],
-        [ "PmenuSel", white, darkgray, "NONE" ],
-        [ "PmenuThumb", white, darkgray, "NONE" ],
-        [ "FoldColumn", white, darkgray, "NONE" ],
-        [ "Folded", white, darkgray, "NONE" ],
-        [ "WildMenu", white, darkgray, "NONE" ],
-        [ "SpecialKey", white, darkgray, "NONE" ],
-        [ "DiffAdd", white, darkgray, "NONE" ],
-        [ "DiffChange", white, darkgray, "NONE" ],
-        [ "DiffDelete", white, darkgray, "NONE" ],
-        [ "DiffText", white, darkgray, "NONE" ],
-        [ "IncSearch", white, darkgray, "NONE" ],
-        [ "Search", white, darkgray, "NONE" ],
-        [ "Directory", white, darkgray, "NONE" ],
-        [ "MatchParen", white, darkgray, "NONE" ],
-        [ "SpellBad", white, darkgray, "NONE", red ],
-        [ "SpellCap", white, darkgray, "NONE", blue ],
-        [ "SpellLocal", white, darkgray, "NONE", magenta ],
-        [ "SpellRare", white, darkgray, "NONE", cyan ],
-        [ "ColorColumn", white, darkgray, "NONE" ],
-        [ "SignColumn", white, darkgray, "NONE" ],
-        [ "ErrorMsg", white, darkgray, "NONE" ],
-        [ "ModeMsg", white, darkgray, "NONE" ],
-        [ "MoreMsg", white, darkgray, "NONE" ],
-        [ "Question", white, darkgray, "NONE" ],
-        [ "WarningMsg", "Error" ],
-        [ "Cursor", white, darkgray, "NONE" ],
-        [ "CursorIM", "Cursor" ],
-        [ "CursorColumn", white, darkgray, "NONE" ],
-        [ "QuickFixLine", white, darkgray, "NONE" ],
+        [ "StorageClass", "Type" ],
+        [ "String", "Constant" ],
+        [ "Structure", "Type" ],
+        [ "TabLine", darkgrey, black, "NONE" ],
+        [ "TabLineFill", black, white, "NONE" ],
+        [ "TabLineSel", darkblue, black, "NONE" ],
+        [ "Tag", "Special" ],
         [ "Terminal", "Normal" ],
-        [ "Conceal", white, darkgray, "NONE" ],
-        [ "ToolbarLine", white, darkgray, "NONE" ],
-        [ "ToolbarButton", white, darkgray, "NONE" ],
-        [ "debugPC", white, darkgray, "NONE" ],
-        [ "debugBreakpoint", white, darkgray, "NONE" ],
+        [ "Title", black, darkblue, "NONE" ],
+        [ "Todo", "NONE", white, "NONE" ],
+        [ "ToolbarButton", black, white, "bold" ],
+        [ "ToolbarLine", black, "NONE", "NONE" ],
+        [ "Type", "NONE", lightgrey, "NONE" ],
+        [ "Typedef", "Type" ],
+        [ "Underlined", "NONE", white, "NONE" ],
+        [ "VertSplit", darkgrey, darkgrey, "NONE" ],
+        [ "Visual", orange, black, "NONE" ],
+        [ "VisualNOS", "Visual" ],
+        [ "WarningMsg", blue, black, "NONE" ],
+        [ "WildMenu", black, darkblue, "NONE" ],
+        [ "helpLeadBlank", white, darkgrey, "NONE" ],
+        [ "helpNormal", white, darkgrey, "NONE" ],
+        [ "htmlEndTag", "htmlTag" ],
+        [ "htmlTag", "Statement" ],
+        [ "lCursor", "Cursor" ],
+        [ "vimOption", "Type" ],
+        [ "xmlEndTag", "xmlTag" ],
+        [ "xmlTag", "Statement" ],
+        [ "xmlTagName", "xmlTag" ],
     ]
 
     # Define the color palette used by :terminal when in GUI Vim
@@ -221,20 +243,20 @@
     # this will inevitably cause usability issues so… be careful.
     terminal_ansi_colors = [
         black,
-        darkred,
-        darkgreen,
-        darkyellow,
-        darkblue,
-        darkmagenta,
-        darkcyan,
-        gray,
-        darkgray,
         red,
+        darkgreen,
+        orange,
+        darkblue,
+        unused,
+        unused,
+        lightgrey,
+        darkgrey,
+        unused,
         green,
-        yellow,
+        unused,
         blue,
-        magenta,
-        cyan,
+        unused,
+        unused,
         white
     ]
 
@@ -312,7 +334,7 @@
     # You don't need to edit anything beyond this line.
 -%>
 " <%= information[:name] %>.vim -- Vim color scheme.
-" Author:      <%= information[:author] %> (<%= information[:email] %>)
+" Author:      <%= information[:author] %>
 " Webpage:     <%= information[:webpage] %>
 " Description: <%= information[:description] %>
 " Last Change: <%= Time.new.strftime "%Y-%m-%d" %>
