@@ -110,7 +110,7 @@
     # :help highlight-default, the others are taken from :help group-name. Both help sections
     # are good reads, by the way.
     highlights = [
-        [ "Normal", "NONE", white, "NONE" ],
+        [ "Normal", black, white, "NONE" ],
         [ "Boolean", "Constant" ],
         [ "Character", "Constant" ],
         [ "ColorColumn", black, "fg", "NONE" ],
@@ -364,6 +364,10 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi <%= highlight[0] %> ctermbg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][2] %> ctermfg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][2] %> cterm=<%= highlight[3] %>
 <% end -%>
 <% end -%>
+endif
+
+if !has("gui_running")
+    hi Normal guibg=NONE
 endif
 <% links = highlights.select do |highlight| -%>
 <% highlight.length == 2 -%>

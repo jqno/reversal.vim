@@ -2,7 +2,7 @@
 " Author:      Jan Ouwens
 " Webpage:     https://github.com/jqno/reversal.vim
 " Description: A 'reversed' colorscheme for vim
-" Last Change: 2020-03-07
+" Last Change: 2020-03-08
 
 hi clear
 
@@ -13,7 +13,7 @@ endif
 let colors_name = "reversal"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi Normal ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#ccd5dd gui=NONE
+    hi Normal ctermbg=236 ctermfg=188 cterm=NONE guibg=#2b2b2b guifg=#ccd5dd gui=NONE
     hi ColorColumn ctermbg=236 ctermfg=fg cterm=NONE guibg=#2b2b2b guifg=fg gui=NONE
     hi Comment ctermbg=NONE ctermfg=151 cterm=NONE guibg=NONE guifg=#acc8a5 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
@@ -76,7 +76,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
 
-    hi Normal ctermbg=NONE ctermfg=white cterm=NONE
+    hi Normal ctermbg=black ctermfg=white cterm=NONE
     hi ColorColumn ctermbg=black ctermfg=fg cterm=NONE
     hi Comment ctermbg=NONE ctermfg=green cterm=NONE
     hi Conceal ctermbg=NONE ctermfg=NONE cterm=NONE
@@ -135,6 +135,10 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi WildMenu ctermbg=black ctermfg=darkblue cterm=NONE
     hi helpLeadBlank ctermbg=white ctermfg=darkgrey cterm=NONE
     hi helpNormal ctermbg=white ctermfg=darkgrey cterm=NONE
+endif
+
+if !has("gui_running")
+    hi Normal guibg=NONE
 endif
 
 hi link Boolean Constant
