@@ -112,8 +112,8 @@
     highlights = [
         [ "Normal", black, white, "NONE" ],
         [ "Terminal", "Normal" ],
-        [ "NonText", black, darkblue, "NONE" ],
-        [ "EndOfBuffer", "NONE", darkblue, "NONE" ],
+        [ "NonText", "NONE", darkblue, "NONE" ],
+        [ "EndOfBuffer", "NonText" ],
 
         [ "Identifier", "NONE", white, "NONE" ],
         [ "Function", "Identifier" ],
@@ -146,39 +146,39 @@
         [ "String", "Constant" ],
 
         [ "Comment", "NONE", green, "NONE" ],
-        [ "Special", "NONE", white, "bold" ],
-        [ "SpecialChar", "SpecialKey" ],
-        [ "SpecialKey", black, orange, "bold" ],
         [ "SpecialComment", "NONE", darkgreen, "NONE" ],
+
+        [ "Special", "NONE", orange, "bold" ],
+        [ "SpecialKey", "Special" ],
+        [ "SpecialChar", "Special" ],
         [ "Debug", "Special" ],
-        [ "Delimiter", "NONE", darkgrey, "NONE" ],
+        [ "Delimiter", "Special" ],
         [ "Tag", "Special" ],
 
         [ "Conceal", "NONE", "NONE", "NONE" ],
-        [ "Ignore", "NONE", lightgrey, "NONE" ],
-        [ "Todo", "NONE", white, "NONE" ],
-        [ "Underlined", "NONE", white, "NONE" ],
+        [ "Ignore", "NONE", darkgrey, "NONE" ],
+        [ "Todo", "NONE", darkblue, "NONE" ],
+        [ "Underlined", "NONE", white, "underline" ],
 
-        [ "Error", "NONE", red, "undercurl", red ],
         [ "ErrorMsg", red, white, "NONE" ],
         [ "WarningMsg", blue, black, "NONE" ],
 
-        [ "ModeMsg", black, orange, "NONE" ],
-        [ "MoreMsg", orange, black, "NONE" ],
-        [ "Directory", black, green, "NONE" ],
-        [ "Question", "MoreMsg" ],
-        [ "Title", black, darkblue, "NONE" ],
+        [ "ModeMsg", orange, black, "NONE" ],
+        [ "MoreMsg", "ModeMsg" ],
+        [ "Question", "ModeMsg" ],
+        [ "Title", "ModeMsg" ],
+        [ "Directory", black, orange, "NONE" ],
 
         [ "StatusLine", darkblue, black, "NONE" ],
         [ "StatusLineNC", darkgrey, black, "NONE" ],
         [ "StatusLineTerm", "StatusLine" ],
         [ "StatusLineTermNC", "StatusLineNC" ],
-        [ "TabLine", darkgrey, black, "NONE" ],
-        [ "TabLineFill", black, white, "NONE" ],
-        [ "TabLineSel", darkblue, black, "NONE" ],
-        [ "ToolbarButton", black, white, "bold" ],
-        [ "ToolbarLine", black, "NONE", "NONE" ],
-        [ "WildMenu", black, darkblue, "NONE" ],
+        [ "TabLine", "StatusLineNC" ],
+        [ "TabLineFill", "StatusLineNC" ],
+        [ "TabLineSel", "StatusLine" ],
+        [ "ToolbarButton", "StatusLine" ],
+        [ "ToolbarLine", "StatusLineNC" ],
+        [ "WildMenu", darkblue, black, "bold" ],
         [ "VertSplit", darkgrey, darkgrey, "NONE" ],
 
         [ "CursorColumn", darkgrey, white, "bold" ],
@@ -186,10 +186,12 @@
         [ "CursorIM", "fg", "NONE", "NONE" ],
         [ "CursorLine", "CursorColumn" ],
         [ "CursorLineNr", "CursorColumn" ],
-        [ "ColorColumn", black, "fg", "NONE" ],
+        [ "ColorColumn", black, "NONE", "NONE" ],
         [ "LineNr", black, darkgrey, "NONE" ],
-        [ "SignColumn", black, "NONE", "NONE" ],
         [ "lCursor", "Cursor" ],
+
+        [ "SignColumn", "NONE", "NONE", "NONE" ],
+        [ "Error", "NONE", red, "NONE" ],
 
         [ "Visual", orange, black, "NONE" ],
         [ "VisualNOS", "Visual" ],
@@ -221,7 +223,7 @@
         [ "htmlTag", "Statement" ],
         [ "xmlEndTag", "xmlTag" ],
         [ "xmlTag", "Statement" ],
-        [ "xmlTagName", "xmlTag" ],
+        [ "xmlTagName", "xmlTag" ]
     ]
 
     # Define the color palette used by :terminal when in GUI Vim
