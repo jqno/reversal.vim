@@ -2,7 +2,7 @@
 " Author:      Jan Ouwens
 " Webpage:     https://github.com/jqno/reversal.vim
 " Description: A 'reversed' colorscheme for vim
-" Last Change: 2020-03-09
+" Last Change: 2020-03-19
 
 hi clear
 
@@ -29,8 +29,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Underlined ctermbg=NONE ctermfg=188 cterm=underline guibg=NONE guifg=#ccd5dd gui=underline
     hi ErrorMsg ctermbg=124 ctermfg=188 cterm=NONE guibg=#ae2e2b guifg=#ccd5dd gui=NONE
     hi WarningMsg ctermbg=117 ctermfg=236 cterm=NONE guibg=#c9e8ef guifg=#2b2b2b gui=NONE
-    hi ModeMsg ctermbg=215 ctermfg=236 cterm=NONE guibg=#ffa630 guifg=#2b2b2b gui=NONE
-    hi Directory ctermbg=236 ctermfg=215 cterm=NONE guibg=#2b2b2b guifg=#ffa630 gui=NONE
+    hi ModeMsg ctermbg=NONE ctermfg=215 cterm=NONE guibg=NONE guifg=#ffa630 gui=NONE
+    hi Directory ctermbg=NONE ctermfg=215 cterm=NONE guibg=NONE guifg=#ffa630 gui=NONE
     hi StatusLine ctermbg=111 ctermfg=236 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
     hi StatusLineNC ctermbg=245 ctermfg=236 cterm=NONE guibg=#818a94 guifg=#2b2b2b gui=NONE
     hi WildMenu ctermbg=111 ctermfg=236 cterm=bold guibg=#89cddc guifg=#2b2b2b gui=bold
@@ -39,7 +39,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Cursor ctermbg=111 ctermfg=236 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
     hi CursorIM ctermbg=fg ctermfg=NONE cterm=NONE guibg=fg guifg=NONE gui=NONE
     hi ColorColumn ctermbg=236 ctermfg=NONE cterm=NONE guibg=#2b2b2b guifg=NONE gui=NONE
-    hi LineNr ctermbg=236 ctermfg=245 cterm=NONE guibg=#2b2b2b guifg=#818a94 gui=NONE
+    hi LineNr ctermbg=NONE ctermfg=245 cterm=NONE guibg=NONE guifg=#818a94 gui=NONE
     hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Error ctermbg=NONE ctermfg=124 cterm=NONE guibg=NONE guifg=#ae2e2b gui=NONE
     hi Visual ctermbg=215 ctermfg=236 cterm=NONE guibg=#ffa630 guifg=#2b2b2b gui=NONE
@@ -50,7 +50,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi FoldColumn ctermbg=236 ctermfg=146 cterm=NONE guibg=#2b2b2b guifg=#a9b7c6 gui=NONE
     hi Folded ctermbg=146 ctermfg=236 cterm=NONE guibg=#a9b7c6 guifg=#2b2b2b gui=NONE
     hi IncSearch ctermbg=124 ctermfg=188 cterm=NONE guibg=#ae2e2b guifg=#ccd5dd gui=NONE
-    hi MatchParen ctermbg=236 ctermfg=111 cterm=NONE guibg=#2b2b2b guifg=#89cddc gui=NONE
+    hi MatchParen ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#89cddc gui=NONE
     hi Search ctermbg=111 ctermfg=236 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
     hi SpellBad ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
     hi SpellCap ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
@@ -59,7 +59,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi DiffAdd ctermbg=151 ctermfg=236 cterm=NONE guibg=#acc8a5 guifg=#2b2b2b gui=NONE
     hi DiffChange ctermbg=215 ctermfg=236 cterm=NONE guibg=#ffa630 guifg=#2b2b2b gui=NONE
     hi DiffDelete ctermbg=124 ctermfg=236 cterm=NONE guibg=#ae2e2b guifg=#2b2b2b gui=NONE
-    hi DiffText ctermbg=236 ctermfg=188 cterm=NONE guibg=#2b2b2b guifg=#ccd5dd gui=NONE
+    hi DiffText ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#ccd5dd gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -80,8 +80,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Underlined ctermbg=NONE ctermfg=white cterm=underline
     hi ErrorMsg ctermbg=red ctermfg=white cterm=NONE
     hi WarningMsg ctermbg=blue ctermfg=black cterm=NONE
-    hi ModeMsg ctermbg=darkyellow ctermfg=black cterm=NONE
-    hi Directory ctermbg=black ctermfg=darkyellow cterm=NONE
+    hi ModeMsg ctermbg=NONE ctermfg=darkyellow cterm=NONE
+    hi Directory ctermbg=NONE ctermfg=darkyellow cterm=NONE
     hi StatusLine ctermbg=darkblue ctermfg=black cterm=NONE
     hi StatusLineNC ctermbg=darkgrey ctermfg=black cterm=NONE
     hi WildMenu ctermbg=darkblue ctermfg=black cterm=bold
@@ -90,7 +90,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Cursor ctermbg=darkblue ctermfg=black cterm=NONE
     hi CursorIM ctermbg=fg ctermfg=NONE cterm=NONE
     hi ColorColumn ctermbg=black ctermfg=NONE cterm=NONE
-    hi LineNr ctermbg=black ctermfg=darkgrey cterm=NONE
+    hi LineNr ctermbg=NONE ctermfg=darkgrey cterm=NONE
     hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE
     hi Error ctermbg=NONE ctermfg=red cterm=NONE
     hi Visual ctermbg=darkyellow ctermfg=black cterm=NONE
@@ -101,7 +101,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi FoldColumn ctermbg=black ctermfg=grey cterm=NONE
     hi Folded ctermbg=grey ctermfg=black cterm=NONE
     hi IncSearch ctermbg=red ctermfg=white cterm=NONE
-    hi MatchParen ctermbg=black ctermfg=darkblue cterm=NONE
+    hi MatchParen ctermbg=NONE ctermfg=darkblue cterm=NONE
     hi Search ctermbg=darkblue ctermfg=black cterm=NONE
     hi SpellBad ctermbg=black ctermfg=NONE cterm=NONE
     hi SpellCap ctermbg=black ctermfg=NONE cterm=NONE
@@ -110,7 +110,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi DiffAdd ctermbg=green ctermfg=black cterm=NONE
     hi DiffChange ctermbg=darkyellow ctermfg=black cterm=NONE
     hi DiffDelete ctermbg=red ctermfg=black cterm=NONE
-    hi DiffText ctermbg=black ctermfg=white cterm=NONE
+    hi DiffText ctermbg=NONE ctermfg=white cterm=NONE
 endif
 
 if !has("gui_running")
