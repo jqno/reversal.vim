@@ -2,7 +2,7 @@
 " Author:      Jan Ouwens
 " Webpage:     https://github.com/jqno/reversal.vim
 " Description: A 'reversed' colorscheme for vim
-" Last Change: 2020-03-19
+" Last Change: 2020-03-23
 
 hi clear
 
@@ -13,8 +13,8 @@ endif
 let colors_name = "reversal"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi Normal ctermbg=236 ctermfg=188 cterm=NONE guibg=#2b2b2b guifg=#ccd5dd gui=NONE
-    hi NonText ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#89cddc gui=NONE
+    hi Normal ctermbg=235 ctermfg=188 cterm=NONE guibg=#2b2b2b guifg=#ccd5dd gui=NONE
+    hi NonText ctermbg=NONE ctermfg=116 cterm=NONE guibg=NONE guifg=#89cddc gui=NONE
     hi Identifier ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#ccd5dd gui=NONE
     hi Statement ctermbg=NONE ctermfg=245 cterm=NONE guibg=NONE guifg=#818a94 gui=NONE
     hi PreProc ctermbg=NONE ctermfg=245 cterm=NONE guibg=NONE guifg=#818a94 gui=NONE
@@ -25,40 +25,40 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Special ctermbg=NONE ctermfg=215 cterm=bold guibg=NONE guifg=#ffa630 gui=bold
     hi Conceal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Ignore ctermbg=NONE ctermfg=245 cterm=NONE guibg=NONE guifg=#818a94 gui=NONE
-    hi Todo ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#89cddc gui=NONE
+    hi Todo ctermbg=NONE ctermfg=116 cterm=NONE guibg=NONE guifg=#89cddc gui=NONE
     hi Underlined ctermbg=NONE ctermfg=188 cterm=underline guibg=NONE guifg=#ccd5dd gui=underline
     hi ErrorMsg ctermbg=124 ctermfg=188 cterm=NONE guibg=#ae2e2b guifg=#ccd5dd gui=NONE
-    hi WarningMsg ctermbg=117 ctermfg=236 cterm=NONE guibg=#c9e8ef guifg=#2b2b2b gui=NONE
+    hi WarningMsg ctermbg=189 ctermfg=235 cterm=NONE guibg=#c9e8ef guifg=#2b2b2b gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=215 cterm=NONE guibg=NONE guifg=#ffa630 gui=NONE
     hi Directory ctermbg=NONE ctermfg=215 cterm=NONE guibg=NONE guifg=#ffa630 gui=NONE
-    hi StatusLine ctermbg=111 ctermfg=236 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
-    hi StatusLineNC ctermbg=245 ctermfg=236 cterm=NONE guibg=#818a94 guifg=#2b2b2b gui=NONE
-    hi WildMenu ctermbg=111 ctermfg=236 cterm=bold guibg=#89cddc guifg=#2b2b2b gui=bold
+    hi StatusLine ctermbg=116 ctermfg=235 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
+    hi StatusLineNC ctermbg=245 ctermfg=235 cterm=NONE guibg=#818a94 guifg=#2b2b2b gui=NONE
+    hi WildMenu ctermbg=116 ctermfg=235 cterm=bold guibg=#89cddc guifg=#2b2b2b gui=bold
     hi VertSplit ctermbg=245 ctermfg=245 cterm=NONE guibg=#818a94 guifg=#818a94 gui=NONE
     hi CursorColumn ctermbg=245 ctermfg=188 cterm=bold guibg=#818a94 guifg=#ccd5dd gui=bold
-    hi Cursor ctermbg=111 ctermfg=236 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
+    hi Cursor ctermbg=116 ctermfg=235 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
     hi CursorIM ctermbg=fg ctermfg=NONE cterm=NONE guibg=fg guifg=NONE gui=NONE
-    hi ColorColumn ctermbg=236 ctermfg=NONE cterm=NONE guibg=#2b2b2b guifg=NONE gui=NONE
+    hi ColorColumn ctermbg=235 ctermfg=NONE cterm=NONE guibg=#2b2b2b guifg=NONE gui=NONE
     hi LineNr ctermbg=NONE ctermfg=245 cterm=NONE guibg=NONE guifg=#818a94 gui=NONE
     hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Error ctermbg=NONE ctermfg=124 cterm=NONE guibg=NONE guifg=#ae2e2b gui=NONE
-    hi Visual ctermbg=215 ctermfg=236 cterm=NONE guibg=#ffa630 guifg=#2b2b2b gui=NONE
-    hi Pmenu ctermbg=245 ctermfg=236 cterm=NONE guibg=#818a94 guifg=#2b2b2b gui=NONE
-    hi PmenuSbar ctermbg=236 ctermfg=NONE cterm=NONE guibg=#2b2b2b guifg=NONE gui=NONE
-    hi PmenuSel ctermbg=111 ctermfg=236 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
-    hi PmenuThumb ctermbg=111 ctermfg=NONE cterm=NONE guibg=#89cddc guifg=NONE gui=NONE
-    hi FoldColumn ctermbg=236 ctermfg=146 cterm=NONE guibg=#2b2b2b guifg=#a9b7c6 gui=NONE
-    hi Folded ctermbg=146 ctermfg=236 cterm=NONE guibg=#a9b7c6 guifg=#2b2b2b gui=NONE
+    hi Visual ctermbg=215 ctermfg=235 cterm=NONE guibg=#ffa630 guifg=#2b2b2b gui=NONE
+    hi Pmenu ctermbg=245 ctermfg=235 cterm=NONE guibg=#818a94 guifg=#2b2b2b gui=NONE
+    hi PmenuSbar ctermbg=235 ctermfg=NONE cterm=NONE guibg=#2b2b2b guifg=NONE gui=NONE
+    hi PmenuSel ctermbg=116 ctermfg=235 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
+    hi PmenuThumb ctermbg=116 ctermfg=NONE cterm=NONE guibg=#89cddc guifg=NONE gui=NONE
+    hi FoldColumn ctermbg=235 ctermfg=146 cterm=NONE guibg=#2b2b2b guifg=#a9b7c6 gui=NONE
+    hi Folded ctermbg=146 ctermfg=235 cterm=NONE guibg=#a9b7c6 guifg=#2b2b2b gui=NONE
     hi IncSearch ctermbg=124 ctermfg=188 cterm=NONE guibg=#ae2e2b guifg=#ccd5dd gui=NONE
-    hi MatchParen ctermbg=NONE ctermfg=111 cterm=NONE guibg=NONE guifg=#89cddc gui=NONE
-    hi Search ctermbg=111 ctermfg=236 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
+    hi MatchParen ctermbg=NONE ctermfg=116 cterm=NONE guibg=NONE guifg=#89cddc gui=NONE
+    hi Search ctermbg=116 ctermfg=235 cterm=NONE guibg=#89cddc guifg=#2b2b2b gui=NONE
     hi SpellBad ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
     hi SpellCap ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
-    hi SpellLocal ctermbg=236 ctermfg=188 cterm=undercurl guibg=#2b2b2b guifg=#ccd5dd gui=undercurl guisp=#ae2e2b
-    hi SpellRare ctermbg=188 ctermfg=236 cterm=undercurl guibg=#ccd5dd guifg=#2b2b2b gui=undercurl guisp=#ae2e2b
-    hi DiffAdd ctermbg=151 ctermfg=236 cterm=NONE guibg=#acc8a5 guifg=#2b2b2b gui=NONE
-    hi DiffChange ctermbg=215 ctermfg=236 cterm=NONE guibg=#ffa630 guifg=#2b2b2b gui=NONE
-    hi DiffDelete ctermbg=124 ctermfg=236 cterm=NONE guibg=#ae2e2b guifg=#2b2b2b gui=NONE
+    hi SpellLocal ctermbg=235 ctermfg=188 cterm=undercurl guibg=#2b2b2b guifg=#ccd5dd gui=undercurl guisp=#ae2e2b
+    hi SpellRare ctermbg=188 ctermfg=235 cterm=undercurl guibg=#ccd5dd guifg=#2b2b2b gui=undercurl guisp=#ae2e2b
+    hi DiffAdd ctermbg=151 ctermfg=235 cterm=NONE guibg=#acc8a5 guifg=#2b2b2b gui=NONE
+    hi DiffChange ctermbg=215 ctermfg=235 cterm=NONE guibg=#ffa630 guifg=#2b2b2b gui=NONE
+    hi DiffDelete ctermbg=124 ctermfg=235 cterm=NONE guibg=#ae2e2b guifg=#2b2b2b gui=NONE
     hi DiffText ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#ccd5dd gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
