@@ -60,17 +60,27 @@
     #
     # If your colors are defined correctly, the resulting colorscheme is guaranteed
     # to work in GVim (Windows/Linux), MacVim (MacOS), and any properly set up terminal emulator.
+
+    oldblue     = [ "#c9e8ef", 189, "blue" ]
+
+    # GUI elements
     black       = [ "#2b2b2b", 235, "black" ]
-    slightlylessblack = [ "#444444", 238, "black" ]
-    white       = [ "#ccd5dd", 188, "white" ]
-    lightgrey   = [ "#a9b7c6", 146, "grey" ]
-    darkgrey    = [ "#818a94", 245, "darkgrey" ]
-    orange      = [ "#ffa630", 215, "darkyellow" ]
-    darkgreen   = [ "#5c7b54", 65, "darkgreen" ]
-    green       = [ "#acc8a5", 151, "green" ]
+    lightblack  = [ "#444444", 238, "black" ]
+    blue        = [ "#87d7ff", 117, "blue" ]
     red         = [ "#ae2e2b", 124, "red" ]
-    blue        = [ "#c9e8ef", 189, "blue" ]
-    darkblue    = [ "#89cddc", 116, "darkblue" ]
+    brown       = [ "#8b2b08", 88, "darkmagenta" ]
+    purple      = [ "#c51888", 162, "magenta" ]
+
+    # Syntax elements
+    darkgrey    = [ "#818a94", 245, "darkgrey" ]
+    lightgrey   = [ "#a9b7c6", 146, "grey" ]
+    white       = [ "#ccd5dd", 188, "white" ]
+    orange      = [ "#ffa630", 215, "yellow" ]
+    darkorange  = [ "#ff7230", 203, "darkyellow" ]
+    green       = [ "#88c518", 112, "green" ]
+    darkgreen   = [ "#639012", 64, "darkgreen" ]
+    
+    # Additional colors
     unused      = [ "#000000", 0, "black" ]
 
 
@@ -113,7 +123,7 @@
     highlights = [
         [ "Normal", black, white, "NONE" ],
         [ "Terminal", "Normal" ],
-        [ "NonText", "NONE", darkblue, "NONE" ],
+        [ "NonText", "NONE", brown, "NONE" ],
         [ "EndOfBuffer", "NonText" ],
 
         [ "Identifier", "NONE", white, "NONE" ],
@@ -137,7 +147,6 @@
         [ "StorageClass", "Type" ],
         [ "Structure", "Type" ],
         [ "Typedef", "Type" ],
-        [ "vimOption", "Type" ],
 
         [ "Constant", "NONE", orange, "NONE" ],
         [ "Boolean", "Constant" ],
@@ -149,7 +158,7 @@
         [ "Comment", "NONE", green, "NONE" ],
         [ "SpecialComment", "NONE", darkgreen, "NONE" ],
 
-        [ "Special", "NONE", orange, "bold" ],
+        [ "Special", "NONE", darkorange, "bold" ],
         [ "SpecialKey", "Special" ],
         [ "SpecialChar", "Special" ],
         [ "Debug", "Special" ],
@@ -158,20 +167,20 @@
 
         [ "Conceal", "NONE", "NONE", "NONE" ],
         [ "Ignore", "NONE", darkgrey, "NONE" ],
-        [ "Todo", "NONE", darkblue, "NONE" ],
+        [ "Todo", "NONE", purple, "bold" ],
         [ "Underlined", "NONE", white, "underline" ],
 
         [ "ErrorMsg", red, white, "NONE" ],
-        [ "WarningMsg", blue, black, "NONE" ],
+        [ "WarningMsg", oldblue, black, "NONE" ],
 
-        [ "ModeMsg", "NONE", orange, "NONE" ],
+        [ "ModeMsg", "NONE", purple, "NONE" ],
         [ "MoreMsg", "ModeMsg" ],
         [ "Question", "ModeMsg" ],
         [ "Title", "ModeMsg" ],
-        [ "Directory", "NONE", orange, "NONE" ],
+        [ "Directory", "ModeMsg" ],
 
-        [ "StatusLine", darkblue, black, "NONE" ],
-        [ "StatusLineNC", darkgrey, black, "NONE" ],
+        [ "StatusLine", blue, black, "NONE" ],
+        [ "StatusLineNC", lightblack, black, "NONE" ],
         [ "StatusLineTerm", "StatusLine" ],
         [ "StatusLineTermNC", "StatusLineNC" ],
         [ "TabLine", "StatusLineNC" ],
@@ -179,39 +188,39 @@
         [ "TabLineSel", "StatusLine" ],
         [ "ToolbarButton", "StatusLine" ],
         [ "ToolbarLine", "StatusLineNC" ],
-        [ "WildMenu", darkblue, black, "bold" ],
-        [ "VertSplit", darkgrey, darkgrey, "NONE" ],
+        [ "WildMenu", blue, black, "bold" ],
+        [ "VertSplit", lightblack, lightblack, "NONE" ],
 
-        [ "CursorColumn", darkgrey, white, "bold" ],
-        [ "Cursor", darkblue, black, "NONE" ],
+        [ "CursorColumn", lightblack, white, "bold" ],
+        [ "Cursor", blue, black, "NONE" ],
         [ "CursorIM", "fg", "NONE", "NONE" ],
         [ "CursorLine", "CursorColumn" ],
         [ "CursorLineNr", "CursorColumn" ],
         [ "ColorColumn", black, "NONE", "NONE" ],
-        [ "LineNr", "NONE", darkgrey, "NONE" ],
+        [ "LineNr", "NONE", brown, "bold" ],
         [ "lCursor", "Cursor" ],
 
         [ "SignColumn", "NONE", "NONE", "NONE" ],
         [ "Error", "NONE", red, "NONE" ],
 
-        [ "Visual", orange, black, "NONE" ],
+        [ "Visual", lightblack, "NONE", "NONE" ],
         [ "VisualNOS", "Visual" ],
         [ "QuickFixLine", "Visual" ],
 
-        [ "Pmenu", darkgrey, black, "NONE" ],
+        [ "Pmenu", black, blue, "NONE" ],
         [ "PmenuSbar", black, "NONE", "NONE" ],
-        [ "PmenuSel", darkblue, black, "NONE" ],
-        [ "PmenuThumb", darkblue, "NONE", "NONE" ],
+        [ "PmenuSel", blue, black, "NONE" ],
+        [ "PmenuThumb", blue, "NONE", "NONE" ],
 
         [ "FoldColumn", black, lightgrey, "NONE" ],
         [ "Folded", lightgrey, black, "NONE" ],
 
-        [ "IncSearch", red, white, "NONE" ],
-        [ "MatchParen", "NONE", darkblue, "NONE" ],
-        [ "Search", darkblue, black, "NONE" ],
+        [ "IncSearch", purple, "NONE", "NONE" ],
+        [ "MatchParen", "NONE", purple, "NONE" ],
+        [ "Search", brown, "NONE", "NONE" ],
 
-        [ "SpellBad", slightlylessblack, "NONE", "NONE" ],
-        [ "SpellCap", slightlylessblack, "NONE", "NONE" ],
+        [ "SpellBad", lightblack, "NONE", "NONE" ],
+        [ "SpellCap", lightblack, "NONE", "NONE" ],
         [ "SpellLocal", black, white, "undercurl", red ],
         [ "SpellRare", white, black, "undercurl", red ],
 
@@ -220,10 +229,11 @@
         [ "DiffDelete", red, black, "NONE" ],
         [ "DiffText", "NONE", white, "NONE" ],
 
-        [ "htmlEndTag", "htmlTag" ],
+        [ "vimOption", "Type" ],
         [ "htmlTag", "Statement" ],
-        [ "xmlEndTag", "xmlTag" ],
+        [ "htmlEndTag", "htmlTag" ],
         [ "xmlTag", "Statement" ],
+        [ "xmlEndTag", "xmlTag" ],
         [ "xmlTagName", "xmlTag" ]
     ]
 
@@ -262,19 +272,19 @@
     # this will inevitably cause usability issues so… be careful.
     terminal_ansi_colors = [
         black,
-        red,
-        darkgreen,
-        orange,
-        darkblue,
         unused,
+        darkgreen,
+        darkorange,
+        unused,
+        brown,
         unused,
         lightgrey,
         darkgrey,
-        unused,
+        red,
         green,
-        unused,
+        orange,
         blue,
-        unused,
+        purple,
         unused,
         white
     ]
