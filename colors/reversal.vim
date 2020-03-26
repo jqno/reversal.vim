@@ -2,7 +2,7 @@
 " Author:      Jan Ouwens
 " Webpage:     https://github.com/jqno/reversal.vim
 " Description: A 'reversed' colorscheme for vim
-" Last Change: 2020-03-25
+" Last Change: 2020-03-26
 
 hi clear
 
@@ -27,7 +27,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Ignore ctermbg=NONE ctermfg=245 cterm=NONE guibg=NONE guifg=#818a94 gui=NONE
     hi Todo ctermbg=NONE ctermfg=162 cterm=bold guibg=NONE guifg=#c51888 gui=bold
     hi Underlined ctermbg=NONE ctermfg=188 cterm=underline guibg=NONE guifg=#ccd5dd gui=underline
-    hi ErrorMsg ctermbg=124 ctermfg=188 cterm=NONE guibg=#ae2e2b guifg=#ccd5dd gui=NONE
+    hi ErrorMsg ctermbg=162 ctermfg=188 cterm=NONE guibg=#c51888 guifg=#ccd5dd gui=NONE
     hi WarningMsg ctermbg=189 ctermfg=235 cterm=NONE guibg=#c9e8ef guifg=#2b2b2b gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=162 cterm=NONE guibg=NONE guifg=#c51888 gui=NONE
     hi StatusLine ctermbg=117 ctermfg=235 cterm=NONE guibg=#87d7ff guifg=#2b2b2b gui=NONE
@@ -40,8 +40,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi ColorColumn ctermbg=235 ctermfg=NONE cterm=NONE guibg=#2b2b2b guifg=NONE gui=NONE
     hi LineNr ctermbg=NONE ctermfg=88 cterm=bold guibg=NONE guifg=#8b2b08 gui=bold
     hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
-    hi Error ctermbg=NONE ctermfg=124 cterm=NONE guibg=NONE guifg=#ae2e2b gui=NONE
-    hi Visual ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
+    hi Error ctermbg=NONE ctermfg=162 cterm=NONE guibg=NONE guifg=#c51888 gui=NONE
+    hi Visual ctermbg=30 ctermfg=NONE cterm=NONE guibg=#08828b guifg=NONE gui=NONE
     hi Pmenu ctermbg=235 ctermfg=117 cterm=NONE guibg=#2b2b2b guifg=#87d7ff gui=NONE
     hi PmenuSbar ctermbg=235 ctermfg=NONE cterm=NONE guibg=#2b2b2b guifg=NONE gui=NONE
     hi PmenuSel ctermbg=117 ctermfg=235 cterm=NONE guibg=#87d7ff guifg=#2b2b2b gui=NONE
@@ -53,11 +53,11 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Search ctermbg=88 ctermfg=NONE cterm=NONE guibg=#8b2b08 guifg=NONE gui=NONE
     hi SpellBad ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
     hi SpellCap ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
-    hi SpellLocal ctermbg=235 ctermfg=188 cterm=undercurl guibg=#2b2b2b guifg=#ccd5dd gui=undercurl guisp=#ae2e2b
-    hi SpellRare ctermbg=188 ctermfg=235 cterm=undercurl guibg=#ccd5dd guifg=#2b2b2b gui=undercurl guisp=#ae2e2b
+    hi SpellLocal ctermbg=235 ctermfg=188 cterm=undercurl guibg=#2b2b2b guifg=#ccd5dd gui=undercurl guisp=#c51888
+    hi SpellRare ctermbg=188 ctermfg=235 cterm=undercurl guibg=#ccd5dd guifg=#2b2b2b gui=undercurl guisp=#c51888
     hi DiffAdd ctermbg=112 ctermfg=235 cterm=NONE guibg=#88c518 guifg=#2b2b2b gui=NONE
     hi DiffChange ctermbg=215 ctermfg=235 cterm=NONE guibg=#ffa630 guifg=#2b2b2b gui=NONE
-    hi DiffDelete ctermbg=124 ctermfg=235 cterm=NONE guibg=#ae2e2b guifg=#2b2b2b gui=NONE
+    hi DiffDelete ctermbg=162 ctermfg=235 cterm=NONE guibg=#c51888 guifg=#2b2b2b gui=NONE
     hi DiffText ctermbg=NONE ctermfg=188 cterm=NONE guibg=NONE guifg=#ccd5dd gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
@@ -77,7 +77,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Ignore ctermbg=NONE ctermfg=darkgrey cterm=NONE
     hi Todo ctermbg=NONE ctermfg=magenta cterm=bold
     hi Underlined ctermbg=NONE ctermfg=white cterm=underline
-    hi ErrorMsg ctermbg=red ctermfg=white cterm=NONE
+    hi ErrorMsg ctermbg=magenta ctermfg=white cterm=NONE
     hi WarningMsg ctermbg=blue ctermfg=black cterm=NONE
     hi ModeMsg ctermbg=NONE ctermfg=magenta cterm=NONE
     hi StatusLine ctermbg=blue ctermfg=black cterm=NONE
@@ -90,8 +90,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi ColorColumn ctermbg=black ctermfg=NONE cterm=NONE
     hi LineNr ctermbg=NONE ctermfg=darkmagenta cterm=bold
     hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE
-    hi Error ctermbg=NONE ctermfg=red cterm=NONE
-    hi Visual ctermbg=black ctermfg=NONE cterm=NONE
+    hi Error ctermbg=NONE ctermfg=magenta cterm=NONE
+    hi Visual ctermbg=darkcyan ctermfg=NONE cterm=NONE
     hi Pmenu ctermbg=black ctermfg=blue cterm=NONE
     hi PmenuSbar ctermbg=black ctermfg=NONE cterm=NONE
     hi PmenuSel ctermbg=blue ctermfg=black cterm=NONE
@@ -107,7 +107,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi SpellRare ctermbg=white ctermfg=black cterm=undercurl
     hi DiffAdd ctermbg=green ctermfg=black cterm=NONE
     hi DiffChange ctermbg=yellow ctermfg=black cterm=NONE
-    hi DiffDelete ctermbg=red ctermfg=black cterm=NONE
+    hi DiffDelete ctermbg=magenta ctermfg=black cterm=NONE
     hi DiffText ctermbg=NONE ctermfg=white cterm=NONE
 endif
 
@@ -171,10 +171,10 @@ let g:terminal_ansi_colors = [
         \ '#ff7230',
         \ '#000000',
         \ '#8b2b08',
-        \ '#000000',
+        \ '#08828b',
         \ '#a9b7c6',
         \ '#818a94',
-        \ '#ae2e2b',
+        \ '#000000',
         \ '#88c518',
         \ '#ffa630',
         \ '#87d7ff',
