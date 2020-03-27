@@ -2,7 +2,7 @@
 " Author:      Jan Ouwens
 " Webpage:     https://github.com/jqno/reversal.vim
 " Description: A 'reversed' colorscheme for vim
-" Last Change: 2020-03-26
+" Last Change: 2020-03-27
 
 hi clear
 
@@ -28,7 +28,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Todo ctermbg=NONE ctermfg=162 cterm=bold guibg=NONE guifg=#c51888 gui=bold
     hi Underlined ctermbg=NONE ctermfg=188 cterm=underline guibg=NONE guifg=#ccd5dd gui=underline
     hi ErrorMsg ctermbg=162 ctermfg=188 cterm=NONE guibg=#c51888 guifg=#ccd5dd gui=NONE
-    hi WarningMsg ctermbg=189 ctermfg=235 cterm=NONE guibg=#c9e8ef guifg=#2b2b2b gui=NONE
+    hi WarningMsg ctermbg=117 ctermfg=235 cterm=NONE guibg=#87d7ff guifg=#2b2b2b gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=162 cterm=NONE guibg=NONE guifg=#c51888 gui=NONE
     hi StatusLine ctermbg=117 ctermfg=235 cterm=NONE guibg=#87d7ff guifg=#2b2b2b gui=NONE
     hi StatusLineNC ctermbg=238 ctermfg=235 cterm=NONE guibg=#444444 guifg=#2b2b2b gui=NONE
@@ -41,7 +41,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi LineNr ctermbg=NONE ctermfg=88 cterm=bold guibg=NONE guifg=#8b2b08 gui=bold
     hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Error ctermbg=NONE ctermfg=162 cterm=NONE guibg=NONE guifg=#c51888 gui=NONE
-    hi Visual ctermbg=30 ctermfg=NONE cterm=NONE guibg=#08828b guifg=NONE gui=NONE
+    hi Visual ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
     hi Pmenu ctermbg=235 ctermfg=117 cterm=NONE guibg=#2b2b2b guifg=#87d7ff gui=NONE
     hi PmenuSbar ctermbg=235 ctermfg=NONE cterm=NONE guibg=#2b2b2b guifg=NONE gui=NONE
     hi PmenuSel ctermbg=117 ctermfg=235 cterm=NONE guibg=#87d7ff guifg=#2b2b2b gui=NONE
@@ -91,7 +91,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi LineNr ctermbg=NONE ctermfg=darkmagenta cterm=bold
     hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE
     hi Error ctermbg=NONE ctermfg=magenta cterm=NONE
-    hi Visual ctermbg=darkcyan ctermfg=NONE cterm=NONE
+    hi Visual ctermbg=black ctermfg=NONE cterm=NONE
     hi Pmenu ctermbg=black ctermfg=blue cterm=NONE
     hi PmenuSbar ctermbg=black ctermfg=NONE cterm=NONE
     hi PmenuSel ctermbg=blue ctermfg=black cterm=NONE
@@ -171,7 +171,7 @@ let g:terminal_ansi_colors = [
         \ '#ff7230',
         \ '#000000',
         \ '#8b2b08',
-        \ '#08828b',
+        \ '#000000',
         \ '#a9b7c6',
         \ '#818a94',
         \ '#000000',
