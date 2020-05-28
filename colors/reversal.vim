@@ -2,7 +2,7 @@
 " Author:      Jan Ouwens
 " Webpage:     https://github.com/jqno/reversal.vim
 " Description: A 'reversed' colorscheme for vim
-" Last Change: 2020-03-27
+" Last Change: 2020-05-28
 
 hi clear
 
@@ -31,17 +31,17 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi WarningMsg ctermbg=117 ctermfg=235 cterm=NONE guibg=#87d7ff guifg=#2b2b2b gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=162 cterm=NONE guibg=NONE guifg=#c51888 gui=NONE
     hi StatusLine ctermbg=117 ctermfg=235 cterm=NONE guibg=#87d7ff guifg=#2b2b2b gui=NONE
-    hi StatusLineNC ctermbg=238 ctermfg=235 cterm=NONE guibg=#444444 guifg=#2b2b2b gui=NONE
+    hi StatusLineNC ctermbg=238 ctermfg=235 cterm=NONE guibg=#666666 guifg=#2b2b2b gui=NONE
     hi WildMenu ctermbg=117 ctermfg=235 cterm=bold guibg=#87d7ff guifg=#2b2b2b gui=bold
-    hi VertSplit ctermbg=238 ctermfg=238 cterm=NONE guibg=#444444 guifg=#444444 gui=NONE
-    hi CursorColumn ctermbg=238 ctermfg=188 cterm=bold guibg=#444444 guifg=#ccd5dd gui=bold
+    hi VertSplit ctermbg=238 ctermfg=238 cterm=NONE guibg=#666666 guifg=#666666 gui=NONE
+    hi CursorColumn ctermbg=238 ctermfg=188 cterm=bold guibg=#666666 guifg=#ccd5dd gui=bold
     hi Cursor ctermbg=117 ctermfg=235 cterm=NONE guibg=#87d7ff guifg=#2b2b2b gui=NONE
     hi CursorIM ctermbg=fg ctermfg=NONE cterm=NONE guibg=fg guifg=NONE gui=NONE
     hi ColorColumn ctermbg=235 ctermfg=NONE cterm=NONE guibg=#2b2b2b guifg=NONE gui=NONE
     hi LineNr ctermbg=NONE ctermfg=88 cterm=bold guibg=NONE guifg=#8b2b08 gui=bold
     hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Error ctermbg=NONE ctermfg=162 cterm=NONE guibg=NONE guifg=#c51888 gui=NONE
-    hi Visual ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
+    hi Visual ctermbg=238 ctermfg=NONE cterm=NONE guibg=#666666 guifg=NONE gui=NONE
     hi Pmenu ctermbg=235 ctermfg=117 cterm=NONE guibg=#2b2b2b guifg=#87d7ff gui=NONE
     hi PmenuSbar ctermbg=235 ctermfg=NONE cterm=NONE guibg=#2b2b2b guifg=NONE gui=NONE
     hi PmenuSel ctermbg=117 ctermfg=235 cterm=NONE guibg=#87d7ff guifg=#2b2b2b gui=NONE
@@ -51,8 +51,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi IncSearch ctermbg=162 ctermfg=NONE cterm=NONE guibg=#c51888 guifg=NONE gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=162 cterm=NONE guibg=NONE guifg=#c51888 gui=NONE
     hi Search ctermbg=88 ctermfg=NONE cterm=NONE guibg=#8b2b08 guifg=NONE gui=NONE
-    hi SpellBad ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
-    hi SpellCap ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
+    hi SpellBad ctermbg=238 ctermfg=NONE cterm=NONE guibg=#666666 guifg=NONE gui=NONE
+    hi SpellCap ctermbg=238 ctermfg=NONE cterm=NONE guibg=#666666 guifg=NONE gui=NONE
     hi SpellLocal ctermbg=235 ctermfg=188 cterm=undercurl guibg=#2b2b2b guifg=#ccd5dd gui=undercurl guisp=#c51888
     hi SpellRare ctermbg=188 ctermfg=235 cterm=undercurl guibg=#ccd5dd guifg=#2b2b2b gui=undercurl guisp=#c51888
     hi DiffAdd ctermbg=112 ctermfg=235 cterm=NONE guibg=#88c518 guifg=#2b2b2b gui=NONE
