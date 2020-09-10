@@ -1,36 +1,12 @@
-# Vim-RNB, a Vim colorscheme template
+# Reversal.vim
 
-## What is this thing?
+A 'reversed' colorscheme for Vim, based on [Vim-RNB](https://github.com/romainl/vim-rnb).
 
-RNB is a template designed to help vimmers create their own colorschemes without much effort.
+I find that most color schemes emphasize the reserved words in a language by giving them bright colours. Reversal.vim does the opposite, and emphasizes identifiers instead. After all, that’s what the code is really about, right?
 
-In reality, Vim colorschemes are not that hard to write but there are several benefits to using a template such as RNB:
+![](screenshots/reversal-1.png)
 
-* you can define/modify variables once instead of messing around with potentially botched substitutions,
-* you can distribute a lean colorscheme, free from unnecessary logic,
-* you can distribute the source alongside the colorscheme, making it easy for your users to experiment and adapt *your* colorscheme to *their* needs,
-* you can focus on the design of your colorscheme rather than its implementation,
-* you can start working on new colorscheme ideas very easily.
+![](screenshots/reversal-2.png)
 
-## What do I need to use it?
+![](screenshots/reversal-3.png)
 
-[ERB](https://ruby-doc.org/stdlib-2.6.3/libdoc/erb/rdoc/index.html), the templating engine used here, is part of Ruby's standard library so you will need [Ruby](https://www.ruby-lang.org/) to generate your colorscheme. Neither ERB nor Ruby knowledge is required, though.
-
-## How do I use it?
-
-The process is divided in five steps:
-
-1. rename `colors/rnb.erb` to `colors/name_of_your_colorscheme.erb`,
-2. start by editing your colorscheme's information,
-3. define your colors,
-4. define your highlight groups and links,
-5. and generate your colorscheme.
-
-Steps 2 to 5 are thoroughly described in the colorscheme template itself in an effort to make it portable: if you ever decide to distribute your colorscheme you can simply package the template with it.
-
-## TODO
-
-* `README.md` template
-
-
-[//]: # ( Vim: set spell spelllang=en: )
