@@ -2,7 +2,7 @@
 " Author:      Jan Ouwens
 " Webpage:     https://github.com/jqno/reversal.vim
 " Description: A 'reversed' colorscheme for vim
-" Last Change: 2020-09-09
+" Last Change: 2020-12-24
 
 hi clear
 
@@ -41,7 +41,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi LineNr ctermbg=NONE ctermfg=88 cterm=bold guibg=NONE guifg=#8b2b08 gui=bold
     hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Error ctermbg=NONE ctermfg=162 cterm=NONE guibg=NONE guifg=#c51888 gui=NONE
-    hi Visual ctermbg=238 ctermfg=NONE cterm=NONE guibg=#666666 guifg=NONE gui=NONE
+    hi Visual ctermbg=240 ctermfg=NONE cterm=NONE guibg=#525252 guifg=NONE gui=NONE
     hi Pmenu ctermbg=238 ctermfg=117 cterm=NONE guibg=#666666 guifg=#87d7ff gui=NONE
     hi PmenuSbar ctermbg=238 ctermfg=NONE cterm=NONE guibg=#666666 guifg=NONE gui=NONE
     hi PmenuSel ctermbg=117 ctermfg=235 cterm=NONE guibg=#87d7ff guifg=#2b2b2b gui=NONE
