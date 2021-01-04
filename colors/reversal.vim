@@ -113,6 +113,7 @@ endif
 
 if !has("gui_running")
     hi Normal guibg=NONE
+    hi Terminal guibg=NONE
 endif
 
 hi! link Terminal Normal
